@@ -1,5 +1,4 @@
 
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +12,7 @@ body {
     color: #333;
 }
 
-/* Header */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -44,7 +43,7 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Hero Section */
+
 .hero {
     display:flex;
     justify-content:space-between;  
@@ -74,7 +73,7 @@ nav ul li a {
     text-align:left;
    }
 
-/* Slideshow container styling */
+
 .slideshow {
     position: relative;
     width: 100%;
@@ -111,7 +110,7 @@ nav ul li a {
     animation-delay: 4s;
 }
 
-/* Animation for fading slideshow */
+
 @keyframes fadeSlideshow {
     0%, 33.33% {
         opacity: 1;
@@ -121,8 +120,7 @@ nav ul li a {
     }
 }
 
-    
-/* About Section */
+
 .about {
     display: flex;
     align-items: center;
@@ -137,9 +135,9 @@ nav ul li a {
 }
 
 .about-left img {
-    max-width: 100%; /* Ensure the image uses full width of its container */
-    width: 50%; /* Set width to 100% for responsiveness */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; 
+    width: 50%; 
+    height: auto; 
     border-radius: 10px;
 }
 
@@ -182,7 +180,7 @@ nav ul li a {
     background-color: #7b4b9f;
 }
 
-/* Features Section */
+
 .features {
     display: flex;
     align-items: center;
@@ -238,7 +236,7 @@ nav ul li a {
    float:right;
 }
 
-/* Special Morning Moment Section */
+
 .special-morning {
     display: flex;
     align-items: center;
