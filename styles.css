@@ -1,0 +1,327 @@
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    font-style:italic;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+}
+
+header h1 {
+    color: #8A5BA6;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    display:flex;
+    justify-content:space-between;  
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.hero h2 {
+    color: #666;
+    font-size: 1.6em;
+ text-align:left;
+    
+}
+
+.hero h1 {
+    color: #8A5BA6;
+    font-size: 5.5em;
+    font-weight: bold;
+    margin: 10px 0;
+ text-align:left;
+}
+
+.hero p {
+    color: #666;
+    font-size: 1.6em;
+    text-align:left;
+   }
+
+/* Slideshow container styling */
+.slideshow {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    margin: 20px 0 0 auto;
+    float:right;
+    overflow: hidden;
+    border-radius: 10px;
+   
+}
+
+.slide-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: fadeSlideshow 12s infinite;
+    
+}
+
+.slide-image:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slide-image:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.slide-image:nth-child(3) {
+    animation-delay: 4s;
+}
+
+/* Animation for fading slideshow */
+@keyframes fadeSlideshow {
+    0%, 33.33% {
+        opacity: 1;
+    }
+    33.33%, 100% {
+        opacity: 1;
+    }
+}
+
+    
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    padding: 60px 40px;
+    background-color: #f9f9f9;
+    gap: 20px;
+}
+
+.about-left,
+.about-right {
+    flex: 1;
+}
+
+.about-left img {
+    max-width: 100%; /* Ensure the image uses full width of its container */
+    width: 50%; /* Set width to 100% for responsiveness */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+}
+
+.about-right {
+    padding-left: 40px;
+}
+
+.about-right h1 {
+    font-size: 2.5em;
+    color: #8A5BA6;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about-right h2, .about-right h3 {
+    font-size: 1.5em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.about-right p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.about-right button {
+    padding: 10px 25px;
+    border: none;
+    background-color: #8A5BA6;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.about-right button:hover {
+    background-color: #7b4b9f;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    align-items: center;
+    padding: 60px 40px;
+}
+
+.features-left {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.features-left h2 {
+    font-size: 2em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.feature {
+    margin-bottom: 30px;
+}
+
+.feature h3 {
+    font-size: 1.5em;
+    color: #8A5BA6;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.feature button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #8A5BA6;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.feature button:hover {
+    background-color: #7b4b9f;
+}
+
+.features-right img {
+    max-width: 50%;
+    border-radius: 10px;
+   float:right;
+}
+
+/* Special Morning Moment Section */
+.special-morning {
+    display: flex;
+    align-items: center;
+    padding: 60px 40px;
+    background-color: #f9f9f9;
+}
+
+.morning-left img {
+    max-width: 90%;
+    border-radius: 10px;
+}
+
+.morning-right {
+    padding-left: 40px;
+}
+
+.morning-right h2 {
+    font-size: 2em;
+    color: #666;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.morning-right h3 {
+    font-size: 1.5em;
+    color: #8A5BA6;
+    margin-bottom: 20px;
+}
+
+.morning-right p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.morning-right button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #8A5BA6;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.morning-right button:hover {
+    background-color: #7b4b9f;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+footer h2 {
+    font-size: 1.5em;
+    color: #8A5BA6;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+footer address {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icons a img {
+    width: 120px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1);
+}
